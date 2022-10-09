@@ -29,13 +29,13 @@ sh get-docker.sh
 ```
 But don't take my word for it, since executing random code from the internet is not the best idea. Follow the Docker installation documentation [here](https://docs.docker.com/engine/install/). Above I demonstrate installing with the [convenience script](https://docs.docker.com/engine/install/debian/#install-using-the-convenience-script).
 
-`config.example.txt` has links to resources on getting your own discord bot token and owner user id.
+[`config.example.txt`](https://github.com/wlamason/discord-music/blob/main/config.example.txt) has links to resources on getting your own discord bot token and owner user id.
 
 ## Author
 
 👤 **Will Lamason**
 
-* Website: wmel.us
+* Website: [wmel.us](https://wmel.us)
 * Github: [@wlamason](https://github.com/wlamason)
 
 ## Show your support
