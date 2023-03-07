@@ -20,7 +20,7 @@ Windows git bash users: substitute `discord-music.sh` with `wdiscord-music.sh`.
 
 ## Hosting
 
-This repo can be run on any server/computer with Docker installed. I have succesfully run an instance of the music bot on a $6 digital ocean debian droplet for almost 1 year now. 
+This repo can be run on any server/computer with Docker installed. I have succesfully run an instance of the music bot on a $6 digital ocean debian droplet for more than 1 year now. 
 
 To quickly install Docker you can run:
 ```sh
