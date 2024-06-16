@@ -1,5 +1,5 @@
 FROM openjdk:11
-ARG VERSION=0.3.9
+ARG VERSION=0.4.1
 WORKDIR /discord-music/
 RUN wget https://github.com/jagrosh/MusicBot/releases/download/${VERSION}/JMusicBot-${VERSION}.jar &&\
     mv JMusicBot-${VERSION}.jar JMusicBot.jar
