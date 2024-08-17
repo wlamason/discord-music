@@ -20,7 +20,9 @@ Windows git bash users: substitute `discord-music.sh` with `wdiscord-music.sh`.
 
 ## Hosting
 
-This repo can be run on any server/computer with Docker installed. I have succesfully run an instance of the music bot on a $6 digital ocean debian droplet for more than 1 year now. 
+### Manually
+
+This repo can be run on any server/computer with Docker installed. I have succesfully run an instance of the music bot on a $6 digital ocean debian droplet for more than 2 years now. 
 
 To quickly install Docker you can run:
 ```sh
@@ -30,6 +32,19 @@ sh get-docker.sh
 But don't take my word for it, since executing random code from the internet is not the best idea. Follow the Docker installation documentation [here](https://docs.docker.com/engine/install/). Above I demonstrate installing with the [convenience script](https://docs.docker.com/engine/install/debian/#install-using-the-convenience-script).
 
 [`config.example.txt`](https://github.com/wlamason/discord-music/blob/main/config.example.txt) has links to resources on getting your own discord bot token and owner user id.
+
+## Terraform
+
+```
+export DIGITALOCEAN_TOKEN="YOUR_DIGITALOCEAN_TOKEN"
+
+terraform init
+
+terraform apply -var "do_token=${DIGITALOCEAN_TOKEN}" -var "pvt_key=$HOME/.ssh/terraform.id_rsa"
+
+terraform destroy -var "do_token=${DIGITALOCEAN_TOKEN}" -var "pvt_key=$HOME/.ssh/terraform.id_rsa"
+
+```
 
 ## Author
 
